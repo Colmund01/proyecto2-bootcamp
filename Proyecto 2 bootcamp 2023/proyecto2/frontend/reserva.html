@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="css/reserva.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <header class="header">
+
+        <a class="logo"> <span>QUANTUM</span>PATATA </a>
+
+        <div id="menu-btn" class="fas fa-bars"></div>
+
+        <nav class="navbar">
+            <a href="./index.html">Home</a>
+            <a href="./Login.html">Login</a>
+        </nav>
+
+    </header>
+
+
+    <section class="input-part">
+        <div id="main_cont">
+            
+            <div id="main_body">
+                <div><input id="inputdate" type="date" palceholder="Select the appointment date"  /></div>
+                <div>
+                    <!-- <label for="slot-select">Choose a Slot:</label> -->
+                    <select name="slot" id="slot-select">
+                        <option value="">--Elija una hora de salida--</option>
+                        <option value="6:00 h">6:00 h</option>
+                        <option value="8:00 h">8:00 h</option>
+                        <option value="18:00 h">18:00 h</option>
+                        <option value="20:00 h">20:00 h</option>
+                    </select>
+                </div>
+                <div>
+                    <button id="book_appointment">Confirmar</button>
+                    <button id="next">Siguiente >></button>
+        <script>
+            document.querySelector(`#next`)
+                .addEventListener(`click`, () => {
+                    location.href = `adminpage.html`;
+                })
+        </script>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    </section>
+
+        </div>
+
+
+    <!-- <a href="./reserva2.html">Siguiente</a> -->
+
+</body>
+
+<script src="./script/reserva.js"></script>
+<script src="./script/reserva2.js"></script>
